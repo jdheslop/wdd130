@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+    <!--Specifies English as the language and the US as the country. German language is de.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the text that shows up on the browser tab</title>
+
+    <style>
+        img {
+            width: 100% /*Prevents style sheets from chaning the size of images*/
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Heading in Header</h1>
+        <p>You can have several headers in an HTML (for example in an article), but not in a footer, address, or another header element.</p>
+    </header>
+
+    <main>
+        <nav>
+            <a href="hello1.html">Link 1</a>
+            <a href="hello2.html">Link 2</a>
+        </nav>
+
+        <section> <!--A section is a thematic grouping of content, typically with a heading.-->
+            <!-- Headings -->
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <h1 style="font-size:60px;">Heading 1</h1>
+        </section>
+
+        <article> <!--An article specifies independent, self-contained content. It should make sense on its own, and it should be possible to distribute it independently from the rest of the web site. -->
+            <!--Paragraphs-->
+            <p>This is a paragraph</p>
+            <br> <!--This is a line break. It creates a new line.-->
+            <p style="color:red">This is a red paragraph</p>
+            <p title="Hello">This shows a text box with "Hello" when you hover over this paragraph</p>
+            <hr> <!--Defines a thematic break. Used to separate content (or define a change) in a page. It inserts a line accross the screen.-->
+            <pre>The text inside of this is shown as typed.
+                
+                It preserves extra spaces        and line breaks.
+            </pre>
+        </article>
+
+        <!-- Span -->
+        <p>A span tag <span style="color:blue">is an inline container used to mark up a part of a text or document.</span></p>
+
+
+        <!-- Div -->
+        <div>
+            <p>The div tag defines a division or a section in an HTML document. It is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. It is easily styled by using the class or id attribute. Any sort of content can be put inside the div tag.</p>
+        </div>
+
+
+        <!-- Class and ID Attributes-->
+        <h3>Class</h3>
+        <p class="hello1"> A class can define css for multiple elements. You address it in CSS with .hello1 {  }</p>
+        <h3>ID</h3>
+        <p id="hello2">An element only defines for one element and can only be used once on a page. You address it in CSS with #hello2 {   }</p>
+
+
+        <!--Lists-->
+        <!--Unordered list. Bullet points are the default.-->
+        <ul> 
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        
+        <!--Ordered list. Numbered list.-->    
+        <ol> 
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+
+        <!--Description  lists-->
+        <dl>
+            <dt>Item 1</dt>
+            <dd>Description of item 1</dd>
+            <dd>Description 2 of item 1</dd></ddY>
+            <dt>Item 2</dt>
+            <dd>Description of item 2</dd>
+        </dl>
+
+
+        <!--Links-->
+        <a href="https://thekleiderschrank.com">Link</a>
+        <br>
+
+        <!--Images-->
+        <img src="/images/hello.jpg" alt="If it can't find the image then it displays this alternate text" width="100" height="100">
+        <br>
+
+        <a href="https://thekleiderschrank.com"><img src="/images/hello.jpg" alt="This turns the image into a link."></a>
+
+        <p><img src="/images/hello.jpg" alt="Image to the right" style="float:right;width:100px;height:10px;">The image will float to the right of the text.</p>
+        <br>
+        <p><img src="/images/hello.jpg" alt="Image to the left" style="float:left;width: 100px;height:10px;">The image will float to the left of the text.</p>
+        <br>
+        <p>Image Maps: The map tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more area tags. </p>
+        <img src="/images/hello.jpg" usemap="#hellomap">
+        <map name="hellomap">
+            <area shape="rect" coords="34,44,270,350" alt="Area 1" href="hello1.htm" onclick="myFunction()">
+            <area shape="poly" coords="140,121,181,116,204,160,204,222" alt="Area 2" href="hello2.htm">
+        </map>
+        <!--"circle" and "poly" (polygon) are other shapes. "default" defines the entire region.The coordinates are x,y from the left margin and the top.-->
+        
+        <!--A clickable area can also trigger a JavaScript function.-->
+        <script>
+            function myFunction() {
+                alert("You clicked area 1")
+            }
+        </script>
+
+        <!--The figure tag specifies self-contained content, like illustrations, diagrams, photos, etc.-->
+        <br>
+        <figure>
+            <img src="/images/hello.jpg" alt="Image in Figure">
+            <figcaption>Figure Caption</figcaption>
+        </figure>
+
+        <details>
+            <summary>Heading for a details element</summary>
+            <p>Details adds additionald etails that the user can view or hide.</p>
+        </details>
+
+        <aside>
+            <p>Content placed in a sidebar.</p>
+        </aside>
+        <!--Sample CSS for aside elements
+        <style>
+            aside {
+                width: 30%;
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                font-style: italic;
+                background-color: lightgrey;            
+            }
+        </style>-->
+    </main>
+
+<footer>
+    <p>A footer typically contains: authorship, copyright, or contact information, sitemap, back to top lings, and/or related documents. You can have several footer elements in one document.</p>
+</footer>
+
+
+</body>
+</html>
