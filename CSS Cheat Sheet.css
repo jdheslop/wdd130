@@ -1,0 +1,96 @@
+/*
+Default browser size is 16px
+1em = 100% of the default font size
+*/
+
+/* */
+
+/* CSS Backgrounds & Text */
+body {
+    background-color: lightblue; /* This property specifies the background color of an element */
+    opacity: 0.8; /* The opacity property specifies the transparency of an element. It can take a value from 0.0 - 1.0. The lower the value, the more transparent.*/
+    color: black; /* The color property is used to set the color of the text. */
+
+}
+
+/* CSS Width / Height */
+body {
+    /* Used to set the height and with of an element */
+    width: 200px; /* length: defines the height/width in px, cm, etc. */
+    height: 80%; /* Defines as a percentage of the containing block*/
+    /* auto - This is default. The browser calculates the height or width
+    initial - sets the height/width to its default value
+    inherit - The height/width will be inherited from its parent value */
+    
+    max-width: 80%; /* Can be specified in px, cm, etc or a % */
+    max-height: 100px;
+    min-height: 50px;
+    min-width: none;
+}
+
+/* CSS Margins - Margins are used to create space around elements, outside of any defined borders.*/
+body {
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: 80%;
+    margin-right: inherit;
+/* Negative values are allowed.*/
+
+/* To shorten the code, it is possible to specify all of the margin properties in one property.*/
+    margin: 25px 50px 75px 100px;
+    /* Top margin is 25px, right margin is 50px, bottom margin is 75px, and left margin is 100px */
+    margin: 25px 50px 75px;
+    /* Top margin is 25px, right and left margins are 50px, bottom margin is 75px */
+    margin: 25px 50px;
+    /* Top and bottom margins are 25px, right and left margins are 50px */
+    margin: 25px;
+    /* All four margins are 25px */
+
+    
+}
+
+/* CSS Layout - Horizontal and Vertical Align */
+    
+body {
+    margin: auto; /* Horizontally center the element within its container. The element will take up the specified withd, and the remaining space will be split equally between the left and right margins.*/
+    text-align: center; /* Center the text inside an element */
+
+    /* Left and Right Align - Using position */    
+    position: absolute;
+    right: 0px;
+
+    /* Left and Right Align - Using float*/
+    float: right;
+
+    /* Center Vertically - Using padding*/
+    padding: 50px 0; /* The 50px is the padding above and below. The 0 is the right and left padding.*/
+
+    /* Center Vertically and Horizontally - Using padding*/
+    padding: 50px 0;
+    text-align: center;
+
+    /* Center Vertically - Using line-height: Use the line-height property with a value that is equal to the height property. */
+    line-height: 200px;
+    height: 200px;
+    text-align: center;
+    /* If the text has multiple lines, add the following:*/
+    p {
+        line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle
+    }
+}
+
+    /* Center an image */
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+
+
+/* *//* *//* *//* */
+
+

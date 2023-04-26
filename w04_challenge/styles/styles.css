@@ -1,0 +1,55 @@
+body {
+    background-color: pink;
+}
+
+#introduction {
+    color: white;
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#introduction h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    letter-spacing: -0.03em;
+}
+
+#introduction h1:hover{
+    color: black;
+}
+
+#introduction h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ol {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    width: 410px;
+    margin: 0 auto;
+    padding: 1em;
+    line-height: 1.5em;
+}
+
+#img_president_nelson {
+    display: block;
+    width: 200px;
+    margin: 0 auto
+}
+
+#quote {
+    color: white;
+    font-size: 2em;
+    width: 275px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+#reference {
+    text-align: center;
+    width: 325px;
+    margin: 0 auto;
+}
