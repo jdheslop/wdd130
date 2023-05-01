@@ -43,9 +43,15 @@ body {
     border: 3px solid red;
 }
 
-.grid-item {
+.pt_grid-item {
     display: inline-grid;
     border: 1px solid orange;
+    aspect-ratio: 1 / 1;
+    place-items: center;
+}
+
+.sa_grid-item {
+    display: inline-grid;
     aspect-ratio: 1 / 1;
     place-items: center;
 }
