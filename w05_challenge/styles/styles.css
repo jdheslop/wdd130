@@ -1,0 +1,44 @@
+body {
+    max-width: 1600px;
+}
+header img {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+main {
+    background-color: grey;
+    width: 100%;
+}
+
+main img {
+    box-sizing: border-box;
+    width: 22%;
+    margin: 5% 5%;
+    border: 5px solid darkgrey;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+/*
+#left {
+    width: 20%;
+    border: 5px solid darkgrey;
+    border-radius: 100%;
+    float: left;
+}
+#center{
+    box-sizing: border-box;
+    width: 20%;
+    margin: 5% 10%;
+    border: 5px solid darkgrey;
+    border-radius: 100%;
+    display: inline-block;
+}
+#right{
+    width: 20%;
+    border: 5px solid darkgrey;
+    border-radius: 100%;
+    float: right;
+}
+*/
