@@ -1,0 +1,84 @@
+Add fun to the introdcution.
+Add friends to the intro. 
+
+What's Your Style
+
+Links:
+Get started
+Choose Your Theme
+Fill Your Closet
+Pick Your Outfit
+Share and Compare
+
+Login
+
+German / English
+
+Step 1: Login
+Logging in makes it possible to save the clothes in your Wardrobe and for your perfect outfits. If you use Amazon to log in it also makes it possible to add items from your closet or outfit directly into a shopping list with Amazon.
+
+            <div class="main">
+                <h3>The Kleider Schrank. The Wardrobe.</h3>
+                <h3>The place where you keep the things that make you look your best. With the right wardrobe you can master every situation. And it all starts with the shoes.</h3>
+                <p>Welcome to the ultimate fashion challenge! Are you ready to put your styling skills to the test? Our web site is the perfect place for all the fashion enthusiasts out ther who love a good challenge. Get ready to pick the best clothes and accessories to create the perfect outfit for each theme. Whether you want to compete with friends or challenge yourself, our game is the perfect way to spend your free time. So, get your creativity flowing and start creating the most stunning looks to win the game. Let's see who has what it takes to become the ultimate fashionista! The Kleider Schrank is waiting for you to show the world your fashion expertise.</p>                
+            </div>
+            <article class="steps">
+                <h4>Step 1: Choose Your Theme</h4>
+                <p>Select your Theme or create your own. Whether it is having lunch with Princess Kate or the perfect outfit for a first date, there are plenty of options to choose from.</p>
+                <h4>Step 2: Fill Your Wardrobe</h4>
+                <p>Browse through clothing options and add everythign that you think looks good to your Wardrobe. </p>
+                <h4>Step 3: Pick Your Outfit</h4>
+                <p>Sort through the items in your Wardrobe to find the correct combination to make your perfect style.</p>
+            </article>
+        </div>
+
+
+
+Step 5: Share and Compare
+Share your masterpiece on social media and with friends to inspire and be inspired!
+
+
+Login functionality hasn't been added yet.
+Continue without logging in.
+Logging in makes it possible to save your Wardrobe abd outfits.
+Using Amazon to log in also xxxx
+
+
+Choose Your Theme
+BRAINSTORM POSSIBLE THEMES
+On a mission with 007
+Lunch with Princess Kate
+A day in the stadium
+Create your own theme: 
+
+
+Fill Your Wardrobe
+Clothing types
+Women's 
+Dress, shirt, etc.
+Men's
+
+Filter:
+Not available yet
+Colors, etc.
+
+Equivilent to adding to a list in Amazon.
+
+
+Pick your Outfit
+Only display items from the Wardrobe and then select items from the Wardrobe to create the outfit.
+Equivalent to adding them to a Amazon shopping cart.
+
+
+
+Share and Compare
+Insert pictures randomly to an image. The layout is determined by the number of items. Pin clothes items that are in the correct position and then have a button to re-sort the other pictures. 
+
+Or let them drag and drop them to the correct position in the layout. Can be anywhere on the page.
+
+Theme and TheKleiderSchrank.com in the middle of the picture. Add an Amazon link to the items.
+Save the picture to the profile or computer. Send to social media. 
+
+Count how many items they have selected and then insert them into a predefined format. They can regenerate to move the pictures to a new location.
+
+

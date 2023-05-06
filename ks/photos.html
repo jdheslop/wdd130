@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/photos.css">
+    <title>The Kleider Schrank</title>
+</head>
+<body>
+    <div id="content">
+        
+        <div class="header">
+            <h1>The Kleider Schrank</h1>
+            <p>Define Your Style - A Fashion Creation for Every Situation</p>
+        </div>
+
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Themes</a>
+            <a href="#">Possibilities</a>
+            <a href="#" class="right">Suggestions</a>
+        </div>        
+
+        <div id="to_do">
+            <h2>To Do Items</h2>
+            <ul>
+                <li>Add a side bar</li>
+                <li>Make it so it is only two side for mobile phones   </li>
+            </ul>
+        </div>
+
+        <div id="gallery">
+
+            <!-- Images used to open the lightbox -->
+
+            <div class="row">
+                <div class="column">
+                  <img src="images/shoes/IMG_6762.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="images/shoes/IMG_6763.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="images/shoes/IMG_6764.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="images/shoes/IMG_6765.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/shoes/IMG_6762.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6763.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6764.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6765.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/shoes/IMG_6766.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6767.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6768.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6769.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/shoes/IMG_6770.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6771.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6772.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6773.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/shoes/IMG_6774.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6775.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6776.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6777.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/shoes/IMG_6778.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6779.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6910.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6911.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/shoes/IMG_6912.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6913.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6914.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/shoes/IMG_6915.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 24</div>
+                        <img src="images/shoes/IMG_6762.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 24</div>
+                        <img src="images/shoes/IMG_6763.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 24</div>
+                        <img src="images/shoes/IMG_6764.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 24</div>
+                        <img src="images/shoes/IMG_6765.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 24</div>
+                        <img src="images/shoes/IMG_6766.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 24</div>
+                        <img src="images/shoes/IMG_6767.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 24</div>
+                        <img src="images/shoes/IMG_6768.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 24</div>
+                        <img src="images/shoes/IMG_6769.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 24</div>
+                        <img src="images/shoes/IMG_6770.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">10 / 24</div>
+                        <img src="images/shoes/IMG_6771.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">11 / 24</div>
+                        <img src="images/shoes/IMG_6772.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">12 / 24</div>
+                        <img src="images/shoes/IMG_6773.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">13 / 24</div>
+                        <img src="images/shoes/IMG_6774.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">14 / 24</div>
+                        <img src="images/shoes/IMG_6775.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">15 / 24</div>
+                        <img src="images/shoes/IMG_6776.JPG" style="width:100%" alt="">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">16 / 24</div>
+                        <img src="images/shoes/IMG_6777.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">17 / 24</div>
+                        <img src="images/shoes/IMG_6778.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">18 / 24</div>
+                        <img src="images/shoes/IMG_6779.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">19 / 24</div>
+                        <img src="images/shoes/IMG_6910.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">20 / 24</div>
+                        <img src="images/shoes/IMG_6911.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">21 / 24</div>
+                        <img src="images/shoes/IMG_6912.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">22 / 24</div>
+                        <img src="images/shoes/IMG_6913.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">23 / 24</div>
+                        <img src="images/shoes/IMG_6914.JPG" style="width:100%" alt="">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">24 / 24</div>
+                        <img src="images/shoes/IMG_6915.JPG" style="width:100%" alt="">
+                    </div>
+
+                </div>        
+
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+              
+              <script>
+              function openModal() {
+                document.getElementById("myModal").style.display = "block";
+              }
+              
+              function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+              }
+              
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+              }
+              </script>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <p>Please note that this website is a work in progress. Improvements and additions will be added on an ongoing basis. Please let us know if you have any suggestions in our <a href="#">comments</a> area. </p>
+            <p>&copy; 2023</p>
+        </div>
+
+    </div>
+</body>
+</html>
