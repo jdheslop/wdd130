@@ -11,28 +11,32 @@
         x- Need to make it so that only one item can be placed in a box -->
 
 <script>
-    function onDragStart(event) {
-        event
-            .dataTransfer
-            .setData('text', event.target.id);
+    var selectedBox = null;
+
+    function highlight(box) {
+        if (selectedBox != null) {
+            selectedBox.classList.remove("highlight");
+        }
+        selectedBox = box;
+        selectedBox.classList.add("highlight");
     }
-    function onDragOver(event) {
-        event.preventDefault();        
+
+    function allowDrop(event) {
+        event.preventDefault();
     }
-    function onDrop(event) {
-        const id = event
-            .dataTransfer
-            .getData('text');
-        const draggableElement = document.getElementById(id);
-        const dropzone = event.target;
-        dropzone.appendChild(draggableElement);
-        event
-            .dataTransfer
-            .clearData();
+
+    function drop(event) {
+        event.preventDefault();
+        if (selectedBox != null) {
+            var image = selectedBox.querySelector("img");
+            if (image != null) {
+                event.target.appendChild(image);
+                selectedBox.classList.remove("highlight");
+                selectedBox = null;
+            }
+        }
     }
 </script>
-
-<!--https://www.digitalocean.com/community/tutorials/js-drag-and-drop-vanilla-js-->
 
 </head>
 <body>
@@ -45,238 +49,213 @@
             <div 
                 id="pt_1-1" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_1-2" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_1-3" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_1-4" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_2-1" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_2-2" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_2-3" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_2-4" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_3-1" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_3-2" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_3-3" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_3-4" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_4-1" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_4-2" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_4-3" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
             <div 
                 id="pt_4-4" 
                 class="pt_grid-item" 
-                ondragover="onDragOver(event);" 
-                ondrop="onDrop(event);"
+                ondrop="drop(event);" 
+                ondragover="allowDrop(event);"
             ></div>
         </div>
 
         <div id="staging_area">
             <div id="sa_1-1" class="sa_grid-item">
-                <div 
-                    id="square1"
-                    class="playing_piece"
-                    draggable="true" 
-                    ondragstart="onDragStart(event);"
-                >B</div> 
+                <div class="box" 
+                    id="square1" 
+                    onclick="highlight(this);">
+                        <img src="images/square.jpg" alt="square"> 
+                </div>
             </div>
-            <!--
-            <div id="sa_1-1" class="sa_grid-item">
-                <img 
-                    src="images/square.jpg" 
-                    alt="square" 
-                    id="square1"
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
-            </div> -->
             <div id="sa_1-2" class="sa_grid-item">
-                <img 
-                    src="images/triangle.png" 
-                    alt="triangle" 
-                    id="triangle1" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="triangle1"
+                    onclick="highlight(this);">
+                        <img src="images/triangle.png" alt="triangle"> 
+                </div>
             </div>
             <div id="sa_1-3" class="sa_grid-item">
-                <img 
-                    src="images/circle.png" 
-                    alt="circle" 
-                    id="circle1" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="circle1"
+                    onclick="highlight(this);">
+                        <img src="images/circle.png" alt="circle"> 
+                </div>
             </div>
             <div id="sa_1-4" class="sa_grid-item">
-                <img 
-                    src="images/star.jfif" 
-                    alt="star" 
-                    id="star1" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="star1"
+                    onclick="highlight(this);">
+                        <img src="images/star.jfif" alt="star"> 
+                </div>
             </div>
             <div id="sa_2-1" class="sa_grid-item">
-                <img 
-                    src="images/square.jpg" 
-                    alt="square" 
+                <div class="box" 
                     id="square2" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                    onclick="highlight(this);">
+                        <img src="images/square.jpg" alt="square"> 
+                </div>
             </div>
             <div id="sa_2-2" class="sa_grid-item">
-                <img 
-                    src="images/triangle.png" 
-                    alt="triangle" 
-                    id="triangle2" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="triangle2"
+                    onclick="highlight(this);">
+                        <img src="images/triangle.png" alt="triangle"> 
+                </div>
             </div>
             <div id="sa_2-3" class="sa_grid-item">
-                <img 
-                    src="images/circle.png" 
-                    alt="circle" 
-                    id="circle2" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="circle2"
+                    onclick="highlight(this);">
+                        <img src="images/circle.png" alt="circle"> 
+                </div>
             </div>
             <div id="sa_2-4" class="sa_grid-item">
-                <img 
-                    src="images/star.jfif" 
-                    alt="star" 
-                    id="star2" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="star2"
+                    onclick="highlight(this);">
+                        <img src="images/star.jfif" alt="star"> 
+                </div>
             </div>
             <div id="sa_3-1" class="sa_grid-item">
-                <img 
-                    src="images/square.jpg" 
-                    alt="square" 
+                <div class="box" 
                     id="square3" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                    onclick="highlight(this);">
+                        <img src="images/square.jpg" alt="square"> 
+                </div>
             </div>
             <div id="sa_3-2" class="sa_grid-item">
-                <img 
-                    src="images/triangle.png" 
-                    alt="triangle" 
-                    id="triangle3" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="triangle3"
+                    onclick="highlight(this);">
+                        <img src="images/triangle.png" alt="triangle"> 
+                </div>
             </div>
             <div id="sa_3-3" class="sa_grid-item">
-                <img 
-                    src="images/circle.png" 
-                    alt="circle" 
-                    id="circle3" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="circle3"
+                    onclick="highlight(this);">
+                        <img src="images/circle.png" alt="circle"> 
+                </div>
             </div>
             <div id="sa_3-4" class="sa_grid-item">
-                <img 
-                    src="images/star.jfif" 
-                    alt="star" 
-                    id="star3" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="star3"
+                    onclick="highlight(this);">
+                        <img src="images/star.jfif" alt="star"> 
+                </div>
             </div>
             <div id="sa_4-1" class="sa_grid-item">
-                <img 
-                    src="images/square.jpg" 
-                    alt="square" 
+                <div class="box" 
                     id="square4" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                    onclick="highlight(this);">
+                        <img src="images/square.jpg" alt="square"> 
+                </div>
             </div>
             <div id="sa_4-2" class="sa_grid-item">
-                <img 
-                    src="images/triangle.png" 
-                    alt="triangle" 
-                    id="triangle4" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="triangle4"
+                    onclick="highlight(this);">
+                        <img src="images/triangle.png" alt="triangle"> 
+                </div>
             </div>
             <div id="sa_4-3" class="sa_grid-item">
-                <img 
-                    src="images/circle.png" 
-                    alt="circle" 
-                    id="circle4" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="circle4"
+                    onclick="highlight(this);">
+                        <img src="images/circle.png" alt="circle"> 
+                </div>
             </div>
             <div id="sa_4-4" class="sa_grid-item">
-                <img 
-                    src="images/star.jfif" 
-                    alt="star" 
-                    id="star4" 
-                    draggable="true" 
-                    ondragstart="onDragStart(event);">
+                <div class="box"
+                    id="star4"
+                    onclick="highlight(this);">
+                        <img src="images/star.jfif" alt="star"> 
+                </div>
             </div>
         </div>
     </div>
