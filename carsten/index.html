@@ -15,6 +15,7 @@
         event
             .dataTransfer
             .setData("text", event.target.id);
+            event.dataTransfer.setDragImage(event.target, 0, 0); // Set a custom drag image
     }
     function onDragOver(event) {
         event.preventDefault();        
@@ -24,9 +25,31 @@
         var data = event.dataTransfer.getData("text");
         event.target.appendChild(document.getElementById(data));
     }
-</script>
 
-<!--https://www.digitalocean.com/community/tutorials/js-drag-and-drop-vanilla-js-->
+      // Touch event listeners for mobile devices
+    function touchstart(event) {
+        event.preventDefault();
+        var touch = event.touches[0];
+        var target = event.target;
+        target.classList.add("touch");
+        var offsetX = touch.clientX - target.getBoundingClientRect().left;
+        var offsetY = touch.clientY - target.getBoundingClientRect().top;
+        target.addEventListener("touchmove", function(event) {
+            var touch = event.touches[0];
+            var x = touch.clientX - offsetX;
+            var y = touch.clientY - offsetY;
+            target.style.left = x + "px";
+            target.style.top = y + "px";
+        }, false);
+    }
+
+    function touchend(event) {
+        event.preventDefault();
+        var target = event.target;
+        target.classList.remove("touch");
+    }
+
+</script>
 
 </head>
 <body>
