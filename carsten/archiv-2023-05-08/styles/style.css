@@ -30,9 +30,11 @@ body {
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     border: 3px solid green;
-
 }
 
+.playing_piece {
+    font-size: 10vw;
+}
 
 #staging_area {
     display: grid;
