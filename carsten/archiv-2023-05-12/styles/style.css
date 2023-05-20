@@ -30,11 +30,9 @@ body {
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     border: 3px solid green;
+
 }
 
-.playing_piece {
-    font-size: 10vw;
-}
 
 #staging_area {
     display: grid;
@@ -69,4 +67,12 @@ img {
     margin: 1%;
 }
 
-
+/* This should make images draggable on touch devices. I haven't tried it yet. 
+img {
+  touch-action: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+*/
