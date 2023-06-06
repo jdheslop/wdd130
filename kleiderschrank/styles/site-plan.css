@@ -67,6 +67,15 @@ p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
+.list {
+  text-align: center;
+}
+ul {
+  display: inline-block;
+  text-align: left;
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+}
 .colors {
   width: 100%;
   min-width: 350px;
