@@ -200,12 +200,11 @@ footer .social img {
 #rivers-hero-img {
     width: 100%;
 }
-
 #rivers-hero-msg {
     margin-bottom: 50px;
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 150px;
+    margin-top: 15%;
 }
 #rivers-hero-msg h1 {
     text-align: center;
