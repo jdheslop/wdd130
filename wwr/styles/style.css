@@ -191,6 +191,7 @@ footer .social img {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
+    margin-bottom: 30px;
 }
 #rivers-hero-box {
     grid-column: 1/4;
@@ -231,7 +232,7 @@ footer .social img {
     grid-row: 1/2;
 }
 .river-description p {
-    font-size: 85%;
+    font-size: 1.6vw;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -324,5 +325,8 @@ footer .social img {
     }
     .river-description {
         display:inline;
+    }
+    .river-description p {
+        font-size: 75%;
     }
 }
