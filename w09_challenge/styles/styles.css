@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+}
+#content {
+    background-color: black;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+    background-color: whitesmoke;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+h5 {
+    color: slateblue;
+    margin: 5% auto 1% auto;
+    font-size: 60%;
+}
+h3 {
+    margin: 1% auto 5% auto;
+}
+.text {
+    color: rosybrown;
+    width: 80%;
+    height: 35%;
+    margin: 5% auto 10% auto;
+    overflow: hidden;
+    font-size: 70%;
+}
+.grid {
+    background-color: slateblue;
+    border-radius: 0px 0px 15px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 15%;
+}
+.grid p {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+#number1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#number2 {
+    grid-column: 2/3;
+    grid-row: 1/2
+}
+#number3 {
+    grid-column: 3/4;
+    grid-row: 1/2
+}
+#text1 {
+    grid-column: 1/2;
+    grid-row: 2/2
+}
+#text2 {
+    grid-column: 2/3;
+    grid-row: 2/2
+}
+#text3 {
+    grid-column: 3/4;
+    grid-row: 2/2
+}
+#number1, #number2, #number3 {
+    margin: 10% auto 0 auto;
+    padding: 5%;
+}
+#text1, #text2, #text3 {
+    font-size: 40%;
+    margin: 0 auto 3% auto;
+}
