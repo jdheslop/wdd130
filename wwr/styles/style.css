@@ -258,6 +258,58 @@ footer .social img {
     align-self: center;
 }
 
+/* CSS for Contact Us Page*/
+#feedback {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;
+}
+.moveDown {
+    margin-top: 3em;
+}
+form {
+    margin: 30px auto 0 auto;
+    width: 60%;
+    padding: 1em;
+    border: 1px solid #a19f9b;
+    border-radius: 1em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #2596be;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid #a19f9b;
+}
+input:focus, textarea:focus {
+    border-color: #a19f9b;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+.button {
+    margin-left: 0.5em;
+}
+
 
 
 
