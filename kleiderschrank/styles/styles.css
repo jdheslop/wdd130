@@ -95,6 +95,9 @@ nav {
     width: 100%;
     overflow: auto;
     border-radius: 0 0 10px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 nav a {
     float: left;
@@ -343,19 +346,25 @@ main h2 {
 }
 
 @media screen and (max-width: 700px) {
+    #heroImg {
+        width: 80%;
+    }
     .productGallery {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 500px) {
+    #heroImg {
+        width: 100%;
+    }
     .productGallery {
         grid-template-columns: repeat(2, 1fr);
     }
-    .headerMsg h2 {
+    .heroMsg h2, .headerMsg h2 {
         font-size: 3vh;
     }
-    .headerMsg h3 {
+    .heroMsg h3, .headerMsg h3 {
         font-size: 2vh;
     }
     
