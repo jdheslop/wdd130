@@ -1,4 +1,28 @@
 
+// DROPDOWN LANGUAGE MENU
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+function dropDown() {
+    document.getElementById("langDropdown").classList.toggle("show");
+}
+
+/* THIS PART DIDN'T WORK
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdownButton')) {
+      var dropdowns = document.getElementsByClassName("langDropdownContent");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+*/
+
 // STICKY NAVBAR
 // When the user scrolls the page, execute stickyNavbar
 window.onscroll = function () {stickyHeader()};
