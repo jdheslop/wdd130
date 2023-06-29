@@ -1,0 +1,228 @@
+clothing-women
+clothing-women-dresses
+clothing-women-dresses-casual #Casual dresses
+https://en.zalando.de/premium-casual-dress-sale/?sale=true
+https://en.zalando.de/women-clothing-summer-dresses-sale/?sale=true
+https://en.zalando.de/premium-casual-dress-sale/?sale=true&p=2 
+https://en.zalando.de/women-clothing-summer-dresses-sale/?sale=true&p=2
+https://en.zalando.de/premium-casual-dress-sale/?sale=true&p=3
+https://en.zalando.de/women-clothing-summer-dresses-sale/?sale=true&p=3
+
+
+clothing-women-dresses-evening #Evening dresses
+clothing-women-dresses-occasion #Occasion dresses
+clothing-women-dresses-shirt #Shirt dresses
+clothing-women-dresses-jersey #Jersey dresses
+clothing-women-dresses-shift #Shift dresses
+clothing-women-dresses-maxi #Maxi dresses
+clothing-women-dresses-denim #Denim dresses
+clothing-women-dresses-knitted #Knitted dresses
+clothing-women-dresses-dirndl #Dirndl dresses
+
+clothing-women-tops #T-shirts & tops
+clothing-women-tops-tshirts
+clothing-women-tops-tops
+clothing-women-tops-polo #Polo shirts
+clothing-women-tops-long #Long-sleeved tops
+
+clothing-women-shirts #Shirts & Blouses
+clothing-women-shirts-shirt #Shirt blouses
+clothing-women-shirts-blouses
+clothing-women-shirts-tunics
+
+clothing-women-pants
+clothing-women-pants-chinos
+clothing-women-pants-slacks
+clothing-women-pants-leggings
+clothing-women-pants-leather #Leather pants
+clothing-women-pants-cargo #Cargo pants
+clothing-women-pants-dungarees
+clothing-women-pants-jogging #Jogging pants
+
+clothing-women-jeans
+clothing-women-jeans-skinny
+clothing-women-jeans-slim
+clothing-women-jeans-straight
+clothing-women-jeans-relaxed
+clothing-women-jeans-bootcut #Bootcut & Flared
+clothing-women-jeans-mom #Mom Jeans
+clothing-women-jeans-shorts #Denim shorts
+
+clothing-women-sweatshirts #Sweatshirts & Hoodies
+clothing-women-sweatshirts-sweatshirts
+clothing-women-sweatshirts-hoodies
+clothing-women-sweatshirts-jackets #Sweat jackets
+clothing-women-sweatshirts-fleece #Fleece Jackets & Pullovers
+
+clothing-women-jackets #Jackets & Blazers
+clothing-women-jackets-lightweight #Lightweight jackets
+clothing-women-jackets-waterproof #Waterproof jackets
+clothing-women-jackets-leather #Leather jackets
+clothing-women-jackets-denim #Denim jackets
+clothing-women-jackets-blazer
+clothing-women-jackets-capes
+clothing-women-jackets-waistcoats
+clothing-women-jackets-outdoor #Outdoor jackets
+clothing-women-jackets-training #Training jackets
+clothing-women-jackets-winter #Winter jackets
+clothing-women-jackets-down #Down jackets
+clothing-women-jackets-bomber #Bomber jackets
+
+clothing-women-coats
+clothing-women-coats-parkas
+clothing-women-coats-trench #Trench coats
+clothing-women-coats-short #Short coats
+clothing-women-coats-classic #Classic coats
+clothing-women-coats-winter #Winter coats
+clothing-women-coats-down #Down coats
+
+clothing-women-knitwear #Knitwear & Cardigans
+clothing-women-knitwear-cardigans
+clothing-women-knitwear-jumper #Knitted jumper
+
+clothing-women-swimwear
+clothing-women-swimwear-bikinis
+clothing-women-swimwear-swimsuits
+clothing-women-swimwear-accessories #Beach accessories
+
+clothing-women-sportswear
+clothing-women-sportswear-tops #T-shirts & tops
+clothing-women-sportswear-pants
+clothing-women-sportswear-bras #Sport bras
+clothing-women-sportswear-jackets #Jackets & gilets
+clothing-women-sportswear-sweatshirts #Hoodies & Sweatshirts
+clothing-women-sportswear-suits #Sport suits
+clothing-women-sportswear-swim #Swim and surfwear
+clothing-women-sportswear-dresses #Dresses & skirts
+clothing-women-sportswear-socks
+clothing-women-sportswear-base #Underwear & baselayers
+clothing-women-sportswear-team #Team merchandise
+
+clothing-women-skirts
+clothing-women-skirts-denim #Denim skirts
+clothing-women-skirts-maxi #Maxi skirts
+clothing-women-skirts-pleated #Pleated skirts
+clothing-women-skirts-aline # A-line skirts
+clothing-women-skirts-mini #Mini skirts
+clothing-women-skirts-pencil #Pencil skirts
+clothing-women-skirts-leather #Leather skirts
+clothing-women-skirts-wrap #Wrap skirts
+
+clothing-women-shorts
+
+clothing-women-jumpsuits
+
+clothing-women-underwear
+clothing-women-underwear-bras
+clothing-women-underwear-bottoms
+clothing-women-underwear-bodysuit #Bodysuits & sets
+clothing-women-underwear-undershirts
+clothing-women-underwear-shapewear
+
+clothing-women-nightwear #Nightwear & Loungewear
+clothing-women-nightwear-night #Night shirts
+clothing-women-nightwear-pyjamas
+clothing-women-nightwear-shirts
+clothing-women-nightwear-pants
+clothing-women-nightwear-bathrobes
+
+clothing-women-socks #Socks & Tights
+clothing-women-socks-tights
+clothing-women-socks-leggings
+clothing-women-socks-socks
+clothing-women-socks-sport #Sports socks
+clothing-women-socks-knee #Knee high socks
+clothing-women-socks-stayups #Stay-ups
+
+clothing-women-shoes
+clothing-women-shoes-sneakers
+clothing-women-shoes-sandals
+clothing-women-shoes-flat #Flat shoes
+clothing-women-shoes-mules
+clothing-women-shoes-pumps
+clothing-women-shoes-high #High heels
+clothing-women-shoes-ballerinas
+clothing-women-shoes-ankle #Ankle boots
+clothing-women-shoes-boots
+clothing-women-shoes-sport #Sports shoes
+clothing-women-shoes-beach #Beach shoes
+clothing-women-shoes-bridal #Bridle shoes
+clothing-women-shoes-house #House shoes
+clothing-women-shoes-outdoor #Outdoor shoes
+clothing-women-shoes-accessories #Shoe accessories
+
+
+clothing-women-sports
+clothing-women-sports-sportswear
+clothing-women-sports-bags #Backpacks & bags
+clothing-women-sports-accessories
+
+clothing-women-accessories
+clothing-women-accessories-bags #Bags & cases
+clothing-women-accessories-jewellery
+clothing-women-accessories-sunglasses
+clothing-women-accessories-hats #Hats & headscarves
+clothing-women-accessories-belts
+clothing-women-accessories-watches
+clothing-women-accessories-scarves
+clothing-women-accessories-gloves
+
+
+clothing-men
+
+clothing-men-tshirts #T-shirts & Polos
+clothing-men-shirts
+clothing-men-sweatshirts #Sweatshirts & Hoodies
+clothing-men-jeans
+clothing-men-pants
+clothing-men-shorts
+clothing-men-sportswear
+clothing-men-tracksuits #Tracksuits & Joggers
+clothing-men-suits #Suits & Tailoring
+clothing-men-jackets 
+clothing-men-coats
+clothing-men-socks #Underwear & Socks
+clothing-men-swimwear
+clothing-men-loungewear #Loungewear & Sleepwear
+
+clothing-men-shoes
+clothing-men-shoes-sneakers
+clothing-men-shoes-sport #Sports shoes
+clothing-men-shoes-open #Open shoes
+clothing-men-shoes-lace #Lace-up shoes
+clothing-men-shoes-loafers
+clothing-men-shoes-business #Business shoes
+clothing-men-shoes-outdoor #Outdoor shoes
+clothing-men-shoes-boots
+clothing-men-shoes-slippers
+
+clothing-girls
+clothing-girls-tshirts #T-shirts & tops
+clothing-girls-dresses
+clothing-girls-pants
+clothing-girls-swimwear
+clothing-girls-outerwear
+clothing-girls-sweatshirts #Sweatshirts & Knitwear
+clothing-girls-onepieces #Onepieces & sets
+clothing-girls-shorts
+clothing-girls-skirts
+clothing-girls-sportswear
+clothing-girls-jeans
+clothing-girls-socks
+clothing-girls-suits #Suits & Blazers
+
+clothing-boys
+clothing-boys-tshirts #T-shirts & tops
+clothing-boys-pants
+clothing-boys-swimwear
+clothing-boys-outerwear
+clothing-boys-sweatshirts #Sweatshirts & Knitwear
+clothing-boys-shorts
+clothing-boys-sportswear
+clothing-boys-jeans
+clothing-boys-socks
+clothing-boys-suits #Suits & Blazers
+
+
+
+
