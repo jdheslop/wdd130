@@ -335,12 +335,19 @@ main h2 {
 .productIntro h3 {
     margin: 2vh auto;
 }
-
-.clothingCategories {
+hr {
+    height: 10px;
+    background-color: #B4ACA4;
+    width: 90%;
+}
+.clothingCategories, .subClothingCategories {
     display: block;
     margin: 1vh auto;
     width: 90%;
     text-align: center;
+}
+.subClothingCategories {
+    font-size: 0.9em;
 }
 .category {
     display: inline-block;
@@ -486,6 +493,9 @@ main h2 {
     color: #B4ACA4;
 }
 
+.hidden {
+    display: none;
+}
 
 /* Adaptive View */
 
@@ -522,7 +532,7 @@ main h2 {
 
 @media screen and (max-width: 500px) {
     #content {
-        font-size: 14px;
+        font-size: 16px;
     }
     #heroImg {
         width: 100%;
