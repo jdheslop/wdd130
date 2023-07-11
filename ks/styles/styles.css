@@ -187,7 +187,10 @@ nav a:hover {
 .nextPage h3:hover {
     color: var(--headline-color-on-white);
 }
-
+.originParagraph {
+    margin: 10vh auto;
+    width: 90%;
+}
 .werbung {
     text-align: center;
     margin: 3vh;
@@ -279,7 +282,7 @@ footer {
     width: 90%;
     border: 1px solid #807475;
     border-radius: 5px;
-    height: 5vh;
+    height: 7vh;
     display: block;
     margin: 1vh auto;
     color: #807475;
@@ -289,11 +292,11 @@ footer {
     width: 50%;
     text-align: center;
     border-radius: 5px;
-    height: 5vh;
+    height: 7vh;
     background-color: var(--nav-background-color);  
     border: 1px solid #807475;
     color: #807475;
-    font-size: 0.8em;
+    font-size: 1em;
     display: block;
     margin: 1vh auto;
 }
@@ -301,7 +304,7 @@ footer {
     width: 37.5%;
     text-align: center;
     border-radius: 5px;
-    height: 5vh;
+    height: 7vh;
     background-color: var(--nav-background-color);  
     border: 1px solid #807475;
     color: #807475;
@@ -340,30 +343,58 @@ hr {
     background-color: #B4ACA4;
     width: 90%;
 }
-.clothingCategories, .subClothingCategories {
+.clothingCategories {
+    display: block;
+    margin: 1vh auto;
+    width: 97%;
+    text-align: center;
+}
+.subClothingCategories {
+    font-size: 0.9em;
     display: block;
     margin: 1vh auto;
     width: 90%;
     text-align: center;
 }
-.subClothingCategories {
-    font-size: 0.9em;
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .category {
-    display: inline-block;
     width: 30%;
-    text-align: center;
-    justify-items: center;
-    background-color: rgba(128,116,117, 0.7);
+    background-color: rgba(128,116,117, 0.5);
     border-radius: 5px;
     border: 3px solid #807475;
     margin: 0.5vh auto; 
     color: #fbfbeb;
     padding: 1vh 0 1vh 0;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    height: 5vh;
+    min-height: 20px;
+}
+.subCategory {
+    width: 95%;
+    background-color: rgba(128,116,117, 0.5);
+    border-radius: 5px;
+    border: 3px solid #807475;
+    margin: 0.5vh auto; 
+    color: #fbfbeb;
+    padding: 1vh 0 1vh 0;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    height: 5vh;
+    min-height: 20px;
 }
 
-.category:hover {
+
+.category:hover, .subCategory:hover {
     color: #042A2B;
 }
 
@@ -375,77 +406,7 @@ hr {
     background-color: #807475;
 }
 
-/* WARDROBE */
-
-.perfectOutfit {
-    display: block;
-    margin: 0 auto;
-}
-.perfectOutfitBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: #fbfbeb;
-    width: 90%;
-    aspect-ratio: 1 / 1;
-    max-width: 600px;
-    max-height: 600px;
-    border: 3px solid #B4ACA4;
-    color: #042A2B;
-    border-radius: 5px;
-    text-align: center;
-}
-.perfectOutfitContainer {
-    margin: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-.perfectOutfitContainer img {
-    width: 100%;
-}
-#perfectOutfit-1_1 {
-    grid-area: 1 / 1 / span 1 / span 1;
-}
-#perfectOutfit-1_2 {
-    grid-area: 1 / 2 / span 1 / span 1;
-}
-#perfectOutfit-1_3 {
-    grid-area: 1 / 3 / span 1 / span 1;
-}
-#perfectOutfit-2_1 {
-    grid-area: 3 / 1 / span 1 / span 1;
-}
-#perfectOutfit-2_2 {
-    grid-area: 3 / 2 / span 1 / span 1;
-}
-#perfectOutfit-2_3 {
-    grid-area: 3 / 3 / span 1 / span 1;
-}
-#textPerfectOutfit {
-    grid-area: 2 / 1 / span 1 / span 3;
-    border: 1px solid #B4ACA4;
-    border-radius: 10px;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-#textPerfectOutfit p {
-    margin: 3px auto;
-}
-
-
-
-
-
-/* OTHER PAGES */
-
-
 /* Product Pages */
-
-
-
 
 .productGallery {
     display: grid;
@@ -456,22 +417,25 @@ hr {
     margin: 0 auto 2vh auto;
     background-color: rgba(128,116,117, 0.7);
     border-radius: 10px;
+    
 }
 .productContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px solid #807475;
     border-radius: 10px;
-    align-content: center;
+
 }
 
 .imageContainer {
     grid-area: 1 / 1 / span 1 / span 2;
-    background-color: rgba(251,251,235, 0.9);
-    height: 30vh;
     align-self: center;
     justify-self: center;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
 }
 
 .productImage {
@@ -501,10 +465,104 @@ hr {
     color: var(--paragraph-color-on-color);
     margin: 0.5vh auto;
     border-radius: 5px;
+    min-height: 35px;
 }
 .productUrl:visited {
     color: #B4ACA4;
 }
+
+
+
+/* WARDROBE */
+
+.perfectOutfit {
+    display: block;
+    margin: 0 auto;
+}
+.perfectOutfitBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(251,251,235, 0.9);
+
+    width: 90vw;
+    height: 90vw;
+    max-width: 600px;
+    max-height: 600px;
+    border: 3px solid #B4ACA4;
+    color: #042A2B;
+    border-radius: 5px;
+    text-align: center;
+}
+.perfectOutfitContainer {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+.rowPerfectOutfit {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.rowPerfectOutfit img {
+    max-height: 260px;
+    max-width: 190px;
+    
+}
+#perfectOutfit-1_1 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+#perfectOutfit-1_2 {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+#perfectOutfit-1_3 {
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+#perfectOutfit-2_1 {
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+#perfectOutfit-2_2 {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+#perfectOutfit-2_3 {
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+#logoPerfectOutfit {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+#logoPerfectOutfit img {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #B4ACA4;
+    border-radius: 5px;
+}
+#textPerfectOutfit {
+    grid-area: 2 / 2 / span 1 / span 2;
+    border: 1px solid #B4ACA4;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    max-height: 100px;
+}
+#textPerfectOutfit p {
+    margin: 3px auto;
+}
+#themePerfectOutfit {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+#ksPerfectOutfit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+}
+
+
+/* OTHER PAGES */
 
 .hidden {
     display: none;
@@ -515,6 +573,9 @@ hr {
 @media screen and (max-width: 1200px) {
     .productGallery {
         grid-template-columns: repeat(5, 1fr);
+    }
+    .imageContainer {
+        height: 225px;
     }
 }
 
@@ -533,14 +594,26 @@ hr {
     #content {
         font-size: 18px;
     }
-    
     #heroImg {
         width: 80%;
     }
     .productGallery {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+    .imageContainer {
+        height: 210px;
+    }
+    .rowPerfectOutfit img {
+        max-height: 36vw;
+        max-width: 26vw;
+    }
+    #textPerfectOutfit {
+        max-height: 13vw;
+    }
+    #logoPerfectOutfit img {
+        max-height: 11vw;
+        max-width: 11vw;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -553,6 +626,9 @@ hr {
     .productGallery {
         grid-template-columns: repeat(2, 1fr);
     }
+    .imageContainer {
+        height: 210px;
+    }
     h1, .heroMsg h2, .headerMsg h2 {
         font-size: 1.3em;
     }
@@ -562,3 +638,9 @@ hr {
     
 }
 
+
+@media screen and (max-width: 400px) {
+    #content {
+        font-size: 14px;
+    }
+}
