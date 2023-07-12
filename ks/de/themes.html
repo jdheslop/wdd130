@@ -38,43 +38,40 @@
             <div class="textParagraph">
                 <p class="minorHeader"><strong>Create Your Own Theme</strong></p>
                     <p>Do you your friends already have a Theme in mind? Enter it in the space provided below to start searching for the best clothing and accessories.</p>
-                    <form class="inputTheme" action="#" method="post">
-                        <input type="text" id="myTheme" name="my_theme">
-                        <button class="themeButton">Enter My Theme</button>
-                    </form>
+                    <div class="inputTheme">
+                        <input type="text" id="myTheme" name="my_theme" maxlength="24">
+                        <div class="themeButtons">
+                            <button class="themeButton" onclick="enterTheme()">Enter My Theme</button>
+                            <button class="themeButton" onclick="clearTheme()">Clear Theme</button>
+                        </div>
+                    </div>
                 <p class="minorHeader hidden"><strong>Random Theme</strong></p>
                     <p class='hidden'>Can't decide what Theme to choose? Then just click on the button below and the system will select a Theme for you.</p>
                     <button class="randomThemeButton hidden">Create Random Theme</button>
                <p class="minorHeader"><strong>List of Themes</strong></p>
                     <p>Or click on one of the Themes from the list below:</p>
-                    <div class="themeList">
-                        <div class="list">
-                            <ul>
-                                <li>Lunch with Princess Kate</li>
-                                <li>First date</li>
-                                <li>A night out on the town</li>
-                                <li>Attending a wedding</li>
-                                <li>Fashionably professional</li>
-                                <li>Beach wear</li>
-                                <li>Date night</li>
-                                <li>Party in the 90's</li>
-                                <li>Murder mystery</li>
-                                <li>Harry Potter</li>
-                            </ul>
-                            <ul>
-                                <li>An evening in Paris</li>
-                                <li>007</li>
-                                <li>Tea party</li>
-                                <li>Wild west</li>
-                                <li>Zombie invasion</li>
-                                <li>Black and white</li>
-                                <li>Winter wonderland</li>
-                                <li>Walk like an Egyptian</li>
-                                <li>Hawaiian luau</li>
-                                <li>Dad fashion</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="themeList">
+                    <a class='themeItem' href='clothing.html'>Lunch with Princess Kate</a>
+                    <a class='themeItem' href='clothing.html'>First date</a>
+                    <a class='themeItem' href='clothing.html'>A night out on the town</a>
+                    <a class='themeItem' href='clothing.html'>Attending a wedding</a>
+                    <a class='themeItem' href='clothing.html'>Fashionably professional</a>
+                    <a class='themeItem' href='clothing.html'>Beach wear</a>
+                    <a class='themeItem' href='clothing.html'>Date night</a>
+                    <a class='themeItem' href='clothing.html'>Party in the 90's</a>
+                    <a class='themeItem' href='clothing.html'>Murder mystery</a>
+                    <a class='themeItem' href='clothing.html'>Harry Potter</a>
+                    <a class='themeItem' href='clothing.html'>An evening in Paris</a>
+                    <a class='themeItem' href='clothing.html'>007</a>
+                    <a class='themeItem' href='clothing.html'>Tea party</a>
+                    <a class='themeItem' href='clothing.html'>Wild west</a>
+                    <a class='themeItem' href='clothing.html'>Zombie invasion</a>
+                    <a class='themeItem' href='clothing.html'>Black and white</a>
+                    <a class='themeItem' href='clothing.html'>Winter wonderland</a>
+                    <a class='themeItem' href='clothing.html'>Walk like an Egyptian</a>
+                    <a class='themeItem' href='clothing.html'>Hawaiian luau</a>
+                    <a class='themeItem' href='clothing.html'>Dad fashion</a>
+                </div>
             </div>
 
             <div class="werbung">
@@ -99,5 +96,6 @@
     </div>
 
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/main-themes.js"></script>
 </body>
 </html>

@@ -275,11 +275,11 @@ footer {
 }
 
 .inputTheme {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 .inputTheme input {
-    width: 90%;
+    width: 100%;
     border: 1px solid #807475;
     border-radius: 5px;
     height: 7vh;
@@ -288,40 +288,60 @@ footer {
     color: #807475;
     font-size: 1em;
 }
+#myTheme {
+    text-align: center;
+}
 .themeButton {
-    width: 50%;
+    width: 80%;
     text-align: center;
     border-radius: 5px;
     height: 7vh;
     background-color: var(--nav-background-color);  
-    border: 1px solid #807475;
+    border: 2px solid #807475;
     color: #807475;
     font-size: 1em;
     display: block;
     margin: 1vh auto;
+    min-height: 40px;
 }
+.themeButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .randomThemeButton {
     width: 37.5%;
     text-align: center;
     border-radius: 5px;
     height: 7vh;
     background-color: var(--nav-background-color);  
-    border: 1px solid #807475;
+    border: 2px solid #807475;
     color: #807475;
     font-size: 0.8em;
     display: block;
     margin: -1vh auto;
+    min-height: 35px;
 }
 
-.list {
+.themeList {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.list ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style-type: none;
-    padding: 0 2px;
+.themeItem {
+    width: 95%;
+    background-color: var(--nav-background-color);
+    border-radius: 5px;
+    border: 2px solid #807475;
+    margin: 0.5vh auto; 
+    color: #807475;
+    padding: 3vh 0 3vh 0;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    height: 5vh;
+    min-height: 35px;
 }
 
 
@@ -329,6 +349,9 @@ footer {
 /* CLOTHING PAGE - Main */
 main h2 {
     margin: 3vh auto;
+}
+#themeBox {
+    text-transform:uppercase;
 }
 .productIntro {
     width: 90%;
@@ -417,14 +440,12 @@ hr {
     margin: 0 auto 2vh auto;
     background-color: rgba(128,116,117, 0.7);
     border-radius: 10px;
-    
 }
 .productContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px solid #807475;
     border-radius: 10px;
-
 }
 
 .imageContainer {
@@ -485,7 +506,6 @@ hr {
     align-items: center;
     margin: auto;
     background-color: rgba(251,251,235, 0.9);
-
     width: 90vw;
     height: 90vw;
     max-width: 600px;
@@ -511,7 +531,6 @@ hr {
 .rowPerfectOutfit img {
     max-height: 260px;
     max-width: 190px;
-    
 }
 #perfectOutfit-1_1 {
     grid-area: 1 / 1 / span 1 / span 1;
@@ -537,12 +556,12 @@ hr {
 #logoPerfectOutfit img {
     height: 60px;
     width: 60px;
-    border: 1px solid #B4ACA4;
+    border: 2px solid #B4ACA4;
     border-radius: 5px;
 }
 #textPerfectOutfit {
     grid-area: 2 / 2 / span 1 / span 2;
-    border: 1px solid #B4ACA4;
+    border: 2px solid #B4ACA4;
     border-radius: 10px;
     width: 100%;
     align-items: center;
@@ -555,6 +574,7 @@ hr {
 #themePerfectOutfit {
     font-family: Verdana, Helvetica, sans-serif;
     font-size: 0.9em;
+    text-transform:uppercase;
 }
 #ksPerfectOutfit {
     font-family: Arial, Helvetica, sans-serif;
